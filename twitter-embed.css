@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@200;400;600&display=swap');
+
+:root {
+  --blue : #1da1f2
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Source Sans Pro;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  margin: 160px auto;
+  width: 601px;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  background-color: white;
+  /* box-shadow: 0px 6px 20px #1da1f2; */
+}
+div.btn {
+  text-align: center;
+  margin: 40px auto;
+}
+button {
+  padding: 10px 16px;
+  font-weight: bolder;
+  border: none;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 22px;
+}
+
+.item {
+  margin: 35px 31px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  margin: auto;
+}
+.user-name {
+  display: flex;
+}
+.firstName {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.acountName {
+  opacity: 0.7;
+}
+
+p.text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+span {
+  color: var(--blue);
+}
+.like-post {
+  opacity: 0.7;
+  display: flex;
+}
+.like-post a{
+  margin-right: 8px;
+}
+.like-post p{
+  margin-right: 20px;
+}

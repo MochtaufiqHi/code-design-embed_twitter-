@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Embed</title>
+  <link rel="stylesheet" href="twitter-embed.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="btn">
+    <button onclick="change()">Dark Mode</button>
+    <button onclick="toggle()">Light Mode</button>
+  </div>
+  <div class="container">
+    <!-- name section -->
+    <div class="container-item">
+      <div class="item">
+        <div class="user">
+          <div class="user-name">
+            <img src="images.jpeg" alt="">
+            <div class="name">
+              <p class="firstName">John Doe</p>
+              <p class="acountName">@realjohndoe</p>
+            </div>
+          </div>
+        <div class="logo">
+        <a href=""><i class="fa-brands fa-twitter fa-xl" style="color: #1da1f2;"></i></a>
+        </div>
+      </div>
+    <!-- add some text -->
+    <p class="text">Why do they call it 'debugging' when it feels more like 'wildly guessing and hoping for the best'?
+      <span>#programming#coding#debugging</span>
+    </p>
+    <!-- add love and time post -->
+      <div class="like-post">
+        <a href=""><i class="fa-regular fa-heart fa-xl" style="color: #77767b;"></i></a>
+        <p>650</p>
+        <p>3:40 PM-Feb 24, 2022</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add javascript to change color -->
+<script>
+  let body = document.body
+  let card = document.querySelector(".container")
+  let text = document.getElementsByTagName("p")
+  let button = document.getElementsByTagName("button")
+
+  function change() {
+    body.style.backgroundColor = "#1e1e1e"
+    card.style.backgroundColor = "#243447"
+    
+    for(let i = 0; i < text.length; i++){
+      text[i].style.color = "#fff"
+    }
+
+    // for(let i = 0; i < button.length; i++){
+    //   button[i].style.color = "#fff"
+    //   button[i].style.backgroundColor = "#243447"
+    // }
+  }
+
+  function toggle() {
+    body.style.backgroundColor = "#fff"
+    card.style.backgroundColor = "#fff"
+    
+    for(let i = 0; i < text.length; i++){
+      text[i].style.color = "#000"
+    }
+
+    // for(let i = 0; i < button.length; i++){
+    //   button[i].style.color = "#fff"
+    //   button[i].style.backgroundColor = "#243447"
+    // }
+  }
+
+  
+
+</script>
+</body>
+</html>
